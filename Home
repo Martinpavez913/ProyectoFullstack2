@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleccionables Colo Colo - Inicio</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>ColoColeccionables</h1>
+            <h2>ColoColeccionables</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="carrito.html">Carrito (0)</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>COLECCIONABLES COLO COLO</h2>
+            <p>La mejor tienda de objetos coleccionables del equipo más grande de Chile. Encuentra camisetas históricas, banderas, escudos y mucho más.</p>
+            <a href="productos.html">Ver productos</a>
+        </section>
+
+        <section>
+            <h2>Productos Destacados</h2>
+            <div>
+                <article>
+                    <h3>Camiseta Edición Especial 2023</h3>
+                    <p>Características: Talla L, oficial, firma de jugadores</p>
+                    <p>Precio: <span>$45.000</span> <span>$90.000</span></p>
+                </article>
+                <article>
+                    <h3>Bandera Oficial</h3>
+                    <p>Características: 1.5x1m, material resistente</p>
+                    <p>Precio: <span>$25.000</span> <span>$50.000</span></p>
+                </article>
+                <article>
+                    <h3>Figura de Arturo Vidal</h3>
+                    <p>Características: Edición coleccionable, 25cm</p>
+                    <p>Precio: <span>$30.000</span> <span>$60.000</span></p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Ofertas Especiales</h2>
+            <div>
+                <article>
+                    <h3>Pack Camiseta + Bufanda</h3>
+                    <p>Características: Combo especial temporada 2023</p>
+                    <p>Precio: <span>$60.000</span> <span>$120.000</span></p>
+                </article>
+                <article>
+                    <h3>Taza Oficial</h3>
+                    <p>Características: Cerámica, diseño exclusivo</p>
+                    <p>Precio: <span>$12.000</span> <span>$24.000</span></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Coleccionables Colo Colo</h3>
+            <p>La tienda oficial de coleccionables del equipo más popular de Chile</p>
+        </div>
+        <div>
+            <h4>Enlaces rápidos</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Suscríbete a nuestro boletín</h4>
+            <form>
+                <input type="email" placeholder="Ingresa tu email">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+        <div>
+            <p>&copy; 2023 Coleccionables Colo Colo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
