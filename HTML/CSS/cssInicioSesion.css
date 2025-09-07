@@ -1,102 +1,17 @@
-* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #000;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 1rem;
-        }
+}
 
-        /* Contenedor principal del login */
-        .login-container {
-            width: 100%;
-            max-width: 450px;
-            padding: 2rem;
-            border: 1px solid #000;
-            background-color: #f9f9f9;
-        }
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+        
+}
 
-        /* Título del formulario */
-        .login-title {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #000;
-            text-align: center;
-        }
-
-        /* Estilos para los grupos de formulario */
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        /* Estilos para las etiquetas */
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-
-        /* Estilos para los campos de entrada */
-        .form-group input {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid #000;
-            font-size: 1rem;
-        }
-
-        /* Estilo específico para el botón */
-        .btn-login {
-            width: 100%;
-            padding: 0.8rem;
-            background-color: #000;
-            color: #fff;
-            border: 1px solid #000;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-login:hover {
-            background-color: #fff;
-            color: #000;
-        }
-
-        /* Enlaces adicionales */
-        .login-links {
-            margin-top: 1.5rem;
-            text-align: center;
-        }
-
-        .login-links a {
-            color: #000;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .login-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* Media queries para responsividad */
-        @media (max-width: 768px) {
-            .login-container {
-                padding: 1.5rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .login-container {
-                padding: 1rem;
-            }
-            
-            .login-title {
-                font-size: 1.5rem;
-            }
-        }
+        
