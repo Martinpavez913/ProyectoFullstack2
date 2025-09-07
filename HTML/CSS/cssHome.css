@@ -1,7 +1,7 @@
 /* Estilos para el logo */
 .logo {
-    width: 60px; /* Ajusta según el tamaño de tu logo */
-    height: 60px; /* Ajusta según el tamaño de tu logo */
+    width: 200px; /* Ajusta según el tamaño de tu logo */
+    height: 200px; /* Ajusta según el tamaño de tu logo */
     object-fit: contain;
 }
 
