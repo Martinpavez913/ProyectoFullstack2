@@ -6,20 +6,78 @@
     <link rel="stylesheet" href="CSS/cssInicioSesion.css">
     <title>Inicio Sesion</title>
 </head>
+
 <body>
-    <section>
-    <h2>Iniciar Sesión</h2>
-    <form>
+    <header>
         <div>
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" placeholder="Ingrese su correo aquí">
+            <h1>ColoColeccionables</h1>
+            <h2>ColoColeccionables</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="carrito.html">Carrito (0)</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Iniciar Sesión</h2>
+            <p>Ingresa a tu cuenta para acceder a beneficios exclusivos y realizar compras en nuestra tienda.</p>
+            
+            <form id="loginForm">
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div>
+                    <button type="submit">Iniciar Sesión</button>
+                </div>
+            </form>
+            
+            <p>¿Olvidaste tu contraseña? <a href="RecuperarPassword.html">Recupérala aquí</a></p>
+            <p>¿No tienes una cuenta? <a href="Registro.html">Regístrate aquí</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>ColoColeccionables</h3>
+            <p>La tienda oficial de coleccionables del equipo más popular de Chile</p>
         </div>
         <div>
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña">
+            <h4>Enlaces rápidos</h4>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
         </div>
-        <input type="submit" value="Iniciar Sesión">
-    </form>
-</section>
+        <div>
+            <h4>Suscríbete a nuestro boletín</h4>
+            <form>
+                <input type="email" placeholder="Ingresa tu email">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+        <div>
+            <p>&copy; 2025 ColoColeccionables. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
