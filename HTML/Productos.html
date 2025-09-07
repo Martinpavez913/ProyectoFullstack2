@@ -21,7 +21,7 @@
             </ul>
         </nav>
         <div class="header-right">
-            <a href="carrito.html">Carrito (0)</a>
+            <a href="carrito.html" id="carrito-link">Carrito (0)</a>
             <div class="auth-links">
                 <a href="InicioSesion.html">Iniciar Sesión</a> | 
                 <a href="Registro.html">Registrarse</a>
@@ -88,6 +88,7 @@
                             <span class="precio-actual">$89.990</span>
                             <span class="precio-anterior">$109.990</span>
                         </div>
+                        <button class="btn-ver-detalles" onclick="window.location.href='detalleProducto.html#1'">Ver Detalles</button>
                         <button class="btn-agregar-carrito">Agregar al Carrito</button>
                     </div>
                 </article>
@@ -104,6 +105,7 @@
                         <div class="producto-precio">
                             <span class="precio-actual">$75.000</span>
                         </div>
+                        <button class="btn-ver-detalles" onclick="window.location.href='detalleProducto.html#2'">Ver Detalles</button>
                         <button class="btn-agregar-carrito">Agregar al Carrito</button>
                     </div>
                 </article>
@@ -120,6 +122,7 @@
                         <div class="producto-precio">
                             <span class="precio-actual">$120.000</span>
                         </div>
+                        <button class="btn-ver-detalles" onclick="window.location.href='detalleProducto.html#3'">Ver Detalles</button>
                         <button class="btn-agregar-carrito">Agregar al Carrito</button>
                     </div>
                 </article>
@@ -137,6 +140,7 @@
                             <span class="precio-actual">$150.000</span>
                             <span class="precio-anterior">$180.000</span>
                         </div>
+                        <button class="btn-ver-detalles" onclick="window.location.href='detalleProducto.html#4'">Ver Detalles</button>
                         <button class="btn-agregar-carrito">Agregar al Carrito</button>
                     </div>
                 </article>
@@ -153,6 +157,7 @@
                         <div class="producto-precio">
                             <span class="precio-actual">$45.000</span>
                         </div>
+                        <button class="btn-ver-detalles" onclick="window.location.href='producto.html?id=5'">Ver Detalles</button>
                         <button class="btn-agregar-carrito">Agregar al Carrito</button>
                     </div>
                 </article>
@@ -169,6 +174,7 @@
                         <div class="producto-precio">
                             <span class="precio-actual">$65.000</span>
                         </div>
+                        <button class="btn-ver-detalles" onclick="window.location.href='producto.html?id=6'">Ver Detalles</button>
                         <button class="btn-agregar-carrito">Agregar al Carrito</button>
                     </div>
                 </article>
@@ -212,5 +218,19 @@
             <p>&copy; 2025 ColoColeccionables. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        // Actualizar contador del carrito al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            const totalItems = carrito.reduce((total, item) => total + item.cantidad, 0);
+            
+            // Actualizar enlace del carrito
+            const carritoLink = document.getElementById('carrito-link');
+            if (carritoLink && totalItems > 0) {
+                carritoLink.textContent = `Carrito (${totalItems})`;
+            }
+        });
+    </script>
 </body>
 </html>
