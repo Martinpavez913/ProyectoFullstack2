@@ -1,3 +1,11 @@
+/* Reset completo para eliminar espacios no deseados */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
 /* Estilos para el logo */
 .logo {
     width: 200px;
@@ -17,11 +25,9 @@ body {
     line-height: 1.6;
     color: #000;
     background-color: #ffffff;
-    padding: 0;
-    margin: 0;
 }
 
-/* Estructura principal */
+/* Estructura principal - Corregido para eliminar espacio superior */
 header {
     background-color: #000;
     color: #fff;
