@@ -1,0 +1,372 @@
+/* Reset básico y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estructura principal */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    border: 1px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border: 1px solid #fff;
+    background-color: #333;
+}
+
+/* User info y auth */
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-info {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.auth-links {
+    margin-top: 0.5rem;
+}
+
+.auth-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal del admin */
+.admin-container {
+    display: flex;
+    min-height: calc(100vh - 200px);
+}
+
+/* Sidebar de administración */
+.admin-sidebar {
+    width: 250px;
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-right: 2px solid #000;
+}
+
+.admin-sidebar h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+
+.admin-sidebar ul {
+    list-style: none;
+}
+
+.admin-sidebar ul li {
+    margin-bottom: 0.8rem;
+}
+
+.admin-sidebar ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    border: 1px solid transparent;
+}
+
+.admin-sidebar ul li a:hover,
+.admin-sidebar ul li a.active {
+    border: 1px solid #000;
+    background-color: #e0e0e0;
+}
+
+/* Contenido principal del admin */
+.admin-main {
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.admin-main h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+
+/* Tarjetas de estadísticas */
+.stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.stat-card {
+    padding: 1.5rem;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.stat-card h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.stat-card a {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.stat-card a:hover {
+    text-decoration: underline;
+}
+
+/* Actividad reciente */
+.recent-activity {
+    margin-bottom: 2.5rem;
+}
+
+.recent-activity h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #000;
+}
+
+.activity-list {
+    border: 1px solid #000;
+}
+
+.activity-item {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-time {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Acciones rápidas */
+.quick-actions h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #000;
+}
+
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.action-btn {
+    display: block;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #000;
+    font-weight: bold;
+}
+
+.action-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+footer h3, footer h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Derechos de autor */
+footer > div:last-child {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 1024px) {
+    .admin-container {
+        flex-direction: column;
+    }
+    
+    .admin-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+    
+    .admin-sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .admin-sidebar ul li {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header div:first-child {
+        margin-bottom: 1rem;
+    }
+    
+    nav ul {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .header-right {
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    .stats-cards,
+    .action-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .admin-sidebar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .admin-main {
+        padding: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .activity-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}

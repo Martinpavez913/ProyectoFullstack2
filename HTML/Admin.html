@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/cssAdmin.css">
+    <title>Panel de Administración - ColoColeccionables</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/Imagenes/logoconfondo.png" alt="Logo ColoColeccionables" class="logo">  
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Volver a Tienda</a></li>
+                <li><a href="AdminHome.html" class="active">Inicio</a></li>
+                <li><a href="AdminProductos.html">Productos</a></li>
+                <li><a href="AdminUsuarios.html">Usuarios</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="user-info">
+                <span>Admin: <strong>NombreUsuario</strong></span>
+            </div>
+            <div class="auth-links">
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <!-- Menú lateral de administración -->
+        <aside class="admin-sidebar">
+            <h3>Panel de Administración</h3>
+            <ul>
+                <li><a href="AdminHome.html" class="active">Dashboard</a></li>
+                <li><a href="AdminProductos.html">Gestión de Productos</a></li>
+                <li><a href="AdminUsuarios.html">Gestión de Usuarios</a></li>
+                <li><a href="AdminPedidos.html">Pedidos</a></li>
+                <li><a href="AdminEstadisticas.html">Estadísticas</a></li>
+                <li><a href="AdminConfiguracion.html">Configuración</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido principal del admin -->
+        <main class="admin-main">
+            <h1>Dashboard de Administración</h1>
+            
+            <section class="stats-cards">
+                <div class="stat-card">
+                    <h3>Total de Productos</h3>
+                    <p class="stat-number">125</p>
+                    <a href="AdminProductos.html">Ver todos</a>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Total de Usuarios</h3>
+                    <p class="stat-number">458</p>
+                    <a href="AdminUsuarios.html">Ver todos</a>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Pedidos del Mes</h3>
+                    <p class="stat-number">42</p>
+                    <a href="AdminPedidos.html">Ver pedidos</a>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Ingresos del Mes</h3>
+                    <p class="stat-number">$2.450.000</p>
+                    <a href="AdminEstadisticas.html">Ver detalles</a>
+                </div>
+            </section>
+
+            <section class="recent-activity">
+                <h2>Actividad Reciente</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <p><strong>Nuevo pedido #00458</strong> - Cliente: Juan Pérez</p>
+                        <span class="activity-time">Hace 15 minutos</span>
+                    </div>
+                    <div class="activity-item">
+                        <p><strong>Producto agregado</strong> - Camiseta Edición 2024</p>
+                        <span class="activity-time">Hace 2 horas</span>
+                    </div>
+                    <div class="activity-item">
+                        <p><strong>Usuario registrado</strong> - maria.gonzalez@email.com</p>
+                        <span class="activity-time">Hace 5 horas</span>
+                    </div>
+                    <div class="activity-item">
+                        <p><strong>Stock actualizado</strong> - Figura Arturo Vidal (Quedan 15 unidades)</p>
+                        <span class="activity-time">Ayer</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quick-actions">
+                <h2>Acciones Rápidas</h2>
+                <div class="action-buttons">
+                    <a href="AdminNuevoProducto.html" class="action-btn">+ Nuevo Producto</a>
+                    <a href="AdminNuevoUsuario.html" class="action-btn">+ Nuevo Usuario</a>
+                    <a href="AdminPedidos.html" class="action-btn">Ver Pedidos Pendientes</a>
+                    <a href="AdminEstadisticas.html" class="action-btn">Generar Reporte</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div>
+            <img src="/Imagenes/logoconfondo.png" alt="Logo ColoColeccionables" class="logo"> 
+            <p>Sistema de Administración - ColoColeccionables</p>
+        </div>
+        <div>
+            <h4>Accesos Rápidos</h4>
+            <ul>
+                <li><a href="AdminHome.html">Dashboard</a></li>
+                <li><a href="AdminProductos.html">Productos</a></li>
+                <li><a href="AdminUsuarios.html">Usuarios</a></li>
+                <li><a href="AdminPedidos.html">Pedidos</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Soporte</h4>
+            <p>Email: admin@colocoleccionables.cl</p>
+            <p>Teléfono: +56 2 2345 6789</p>
+        </div>
+        <div>
+            <p>&copy; 2025 ColoColeccionables. Todos los derechos reservados.</p>
+            <p>Panel de Administración v1.0</p>
+        </div>
+    </footer>
+</body>
+</html>
