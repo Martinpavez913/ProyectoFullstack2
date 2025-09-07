@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/cssProductos.css">
+    <title>ColoColeccionables - Catálogo de Productos</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>ColoColeccionables</h1>
+            <h2>Tienda Oficial de Coleccionables</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Productos.html" class="active">Productos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="carrito.html">Carrito (0)</a>
+            <div class="auth-links">
+                <a href="InicioSesion.html">Iniciar Sesión</a> | 
+                <a href="Registro.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="filtros">
+            <h2>Filtrar Productos</h2>
+            <div class="filtros-container">
+                <div class="filtro-grupo">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria">
+                        <option value="">Todas las categorías</option>
+                        <option value="vestuario">Vestuario</option>
+                        <option value="accesorios">Accesorios</option>
+                        <option value="libros">Libros</option>
+                        <option value="figuras">Figuras</option>
+                    </select>
+                </div>
+                
+                <div class="filtro-grupo">
+                    <label for="precio">Rango de precio:</label>
+                    <select id="precio">
+                        <option value="">Todos los precios</option>
+                        <option value="0-20000">$0 - $20.000</option>
+                        <option value="20000-50000">$20.000 - $50.000</option>
+                        <option value="50000-100000">$50.000 - $100.000</option>
+                        <option value="100000+">Más de $100.000</option>
+                    </select>
+                </div>
+                
+                <div class="filtro-grupo">
+                    <label for="estado">Estado:</label>
+                    <select id="estado">
+                        <option value="">Todos</option>
+                        <option value="nuevo">Nuevo</option>
+                        <option value="usado">Usado</option>
+                        <option value="vintage">Vintage/Retro</option>
+                    </select>
+                </div>
+                
+                <div class="filtro-grupo">
+                    <button type="button" class="btn-filtrar">Aplicar Filtros</button>
+                    <button type="button" class="btn-limpiar">Limpiar Filtros</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogo">
+            <h2>Productos Destacados</h2>
+            <div class="productos-grid">
+                <!-- Producto 1 -->
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <img src="imagenes/camiseta-1997.jpg" alt="Camiseta Local Colo-Colo 1997">
+                        <span class="producto-etiqueta">Vintage</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Camiseta Local 1997</h3>
+                        <p>Camiseta oficial de local temporada 1997. Edición especial conmemorativa.</p>
+                        <div class="producto-precio">
+                            <span class="precio-actual">$89.990</span>
+                            <span class="precio-anterior">$109.990</span>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <img src="imagenes/camiseta-2006.jpg" alt="Camiseta Visita Colo-Colo 2006">
+                        <span class="producto-etiqueta">Clásica</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Camiseta Visita 2006</h3>
+                        <p>Camiseta de visita temporada 2006. Perfecto estado, tallas disponibles.</p>
+                        <div class="producto-precio">
+                            <span class="precio-actual">$75.000</span>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <img src="imagenes/foto-matias.jpg" alt="Foto autografiada de Matías Fernández">
+                        <span class="producto-etiqueta">Exclusivo</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Foto Autografiada Matías Fernández</h3>
+                        <p>Fotografía oficial autografiada por Matías Fernández. Certificado de autenticidad incluido.</p>
+                        <div class="producto-precio">
+                            <span class="precio-actual">$120.000</span>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 4 -->
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <img src="imagenes/camiseta-vidal.jpg" alt="Camiseta 2024 firmada por Arturo Vidal">
+                        <span class="producto-etiqueta">Edición Limitada</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Camiseta 2024 Firmada por Vidal</h3>
+                        <p>Camiseta local temporada 2024 firmada por Arturo Vidal. Solo 50 unidades disponibles.</p>
+                        <div class="producto-precio">
+                            <span class="precio-actual">$150.000</span>
+                            <span class="precio-anterior">$180.000</span>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 5 -->
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <img src="imagenes/libro-historia.jpg" alt="Libro Historia de Colo-Colo">
+                        <span class="producto-etiqueta">Coleccionista</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Libro: Historia de Colo-Colo</h3>
+                        <p>Edición especial con fotos históricas y relatos de los momentos más importantes del club.</p>
+                        <div class="producto-precio">
+                            <span class="precio-actual">$45.000</span>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 6 -->
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <img src="imagenes/figura-zamorano.jpg" alt="Figura de Iván Zamorano">
+                        <span class="producto-etiqueta">Nuevo</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Figura Iván Zamorano Edición Especial</h3>
+                        <p>Figura coleccionable de Iván Zamorano con uniforme de Colo-Colo. Altura: 25cm.</p>
+                        <div class="producto-precio">
+                            <span class="precio-actual">$65.000</span>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>ColoColeccionables</h3>
+            <p>La tienda oficial de coleccionables del equipo más popular de Chile</p>
+        </div>
+        <div>
+            <h4>Enlaces rápidos</h4>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Categorías</h4>
+            <ul>
+                <li><a href="#">Vestuario</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Libros</a></li>
+                <li><a href="#">Figuras</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Suscríbete a nuestro boletín</h4>
+            <form>
+                <input type="email" placeholder="Ingresa tu email">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+        <div>
+            <p>&copy; 2025 ColoColeccionables. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

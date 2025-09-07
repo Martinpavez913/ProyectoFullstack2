@@ -1,0 +1,393 @@
+/* Reset básico y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estructura principal */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header div:first-child h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+}
+
+header div:first-child h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #ccc;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    border: 1px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border: 1px solid #fff;
+}
+
+/* Carrito y enlaces de autenticación */
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    display: inline-block;
+}
+
+.header-right a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.auth-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Sección de filtros */
+.filtros {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.filtros h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.filtros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.filtro-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro-grupo label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.filtro-grupo select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-filtrar, .btn-limpiar {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.btn-filtrar {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-limpiar {
+    background-color: #f0f0f0;
+    color: #333;
+    margin-left: 0.5rem;
+}
+
+.btn-filtrar:hover {
+    background-color: #333;
+}
+
+.btn-limpiar:hover {
+    background-color: #ddd;
+}
+
+/* Catálogo de productos */
+.catalogo {
+    margin-bottom: 3rem;
+}
+
+.catalogo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.producto-imagen {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.producto-etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 3px;
+}
+
+.producto-info {
+    padding: 1rem;
+}
+
+.producto-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.producto-info p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.producto-precio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.precio-actual {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.precio-anterior {
+    font-size: 1rem;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 0.5rem;
+}
+
+.btn-agregar-carrito {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agregar-carrito:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+footer h3, footer h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Formulario de suscripción */
+footer form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+footer input[type="email"] {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Derechos de autor */
+footer > div:last-child {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header div:first-child {
+        margin-bottom: 1rem;
+    }
+    
+    nav ul {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .header-right {
+        align-items: center;
+    }
+    
+    .filtros-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .productos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    footer form {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .auth-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
