@@ -1,11 +1,11 @@
-/* Estilos para el logo */
+/* LOGO */
 .logo {
-    width: 200px; /* Ajusta según el tamaño de tu logo */
-    height: 200px; /* Ajusta según el tamaño de tu logo */
+    width: 200px;
+    height: 200px;
     object-fit: contain;
 }
 
-/* Media query para responsividad - Actualizado */
+/* MEDIA QUERY RESPONSIVIDAD */
 @media (max-width: 768px) {
     .logo-container {
         flex-direction: column;
@@ -18,12 +18,12 @@
         height: 50px;
     }
     
-    /* El resto de tus estilos responsive... */
+    
 }
 
 
 
-/* Reset básico y estilos generales */
+/* RESET Y ESTILOS GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ body {
     margin: 0;
 }
 
-/* Estructura principal */
+/* ESTRUCTURA PRINCIPAL */
 header {
     background-color: #000;
     color: #fff;
@@ -61,7 +61,7 @@ header div:first-child h2 {
     color: #ccc;
 }
 
-/* Navegación */
+/* NAVEGADOR */
 nav ul {
     display: flex;
     list-style: none;
@@ -85,7 +85,7 @@ nav ul li a.active {
     border: 1px solid #fff;
 }
 
-/* Carrito y enlaces de autenticación */
+/* CARRITO Y ENLACES AUTEN */
 .header-right {
     display: flex;
     flex-direction: column;
@@ -111,14 +111,14 @@ nav ul li a.active {
     gap: 0.5rem;
 }
 
-/* Contenido principal */
+/* CONTENIDO PRINCIPAL */
 main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* Sección de filtros */
+/* FILTROS */
 .filtros {
     background-color: #fff;
     padding: 1.5rem;
@@ -182,7 +182,7 @@ main {
     background-color: #ddd;
 }
 
-/* Catálogo de productos */
+/* CATALOGO PRODUCTOS */
 .catalogo {
     margin-bottom: 3rem;
 }
@@ -287,7 +287,7 @@ main {
     background-color: #333;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     background-color: #000;
     color: #fff;
@@ -324,7 +324,7 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-/* Formulario de suscripción */
+/* SUSCRIPCION */
 footer form {
     display: flex;
     flex-wrap: wrap;
@@ -354,7 +354,7 @@ footer button:hover {
     color: #fff;
 }
 
-/* Derechos de autor */
+/* DERECHOS DE AUTOR */
 footer > div:last-child {
     grid-column: 1 / -1;
     text-align: center;
@@ -363,7 +363,7 @@ footer > div:last-child {
     border-top: 1px solid #333;
 }
 
-/* Media queries para responsividad */
+/* MEDIA QUERYS DE RESPONSIVIDAD */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
