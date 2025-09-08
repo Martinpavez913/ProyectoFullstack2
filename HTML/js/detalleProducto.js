@@ -1,3 +1,5 @@
+// js/detalleProducto.js
+
 // Base de datos de productos
 const productos = [
     {
@@ -73,21 +75,14 @@ const productos = [
 
 // Función para obtener parámetros de la URL
 function obtenerParametroURL(nombre) {
-    // Para funcionar localmente sin servidor
     if (window.location.search) {
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get(nombre);
     } else {
-        // Si no hay parámetros en la URL (archivo local)
-        // Mostrar selector de producto para pruebas
         document.getElementById('selector-producto').style.display = 'block';
-        
-        // Intentar obtener el ID del hash o usar el primero por defecto
         if (window.location.hash) {
             return window.location.hash.substring(1);
         }
-        
-        // Por defecto, mostrar el primer producto
         return "1";
     }
 }
@@ -109,7 +104,6 @@ function formatearPrecio(precio) {
 function cargarDetallesProducto() {
     let productoId = obtenerParametroURL('id');
     
-    // Si no hay parámetros en la URL, usar el hash o valor por defecto
     if (!productoId || productoId === "null") {
         productoId = window.location.hash ? window.location.hash.substring(1) : "1";
     }
@@ -135,7 +129,7 @@ function cargarDetallesProducto() {
 
     // Generar HTML para las tallas (si aplica)
     let tallasHTML = '';
-    if (producto.tallas) {
+    if (producto.tallas && producto.tallas.length > 0) {
         tallasHTML = `
             <div class="opcion-grupo">
                 <label for="talla">Talla:</label>
@@ -248,14 +242,17 @@ function agregarAlCarrito(productoId) {
         // Actualizar cantidad si el producto ya está en el carrito
         carrito[productoExistenteIndex].cantidad += cantidad;
     } else {
-        // Agregar nuevo producto al carrito
+        // Agregar nuevo producto al carrito (con toda la información necesaria)
         carrito.push({
             id: producto.id,
             nombre: producto.nombre,
             precio: producto.precio,
             imagen: producto.imagenes[0],
             cantidad: cantidad,
-            talla: talla
+            talla: talla,
+            // Información adicional para mostrar en el carrito
+            categoria: producto.categoria,
+            estado: producto.estado
         });
     }
     
@@ -269,12 +266,12 @@ function agregarAlCarrito(productoId) {
     alert(`¡${producto.nombre} agregado al carrito!`);
 }
 
-// Función para actualizar el contador del carrito
+// Función para actualizar el contador del carrito (también usada en carrito.js)
 function actualizarContadorCarrito() {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const totalItems = carrito.reduce((total, item) => total + item.cantidad, 0);
     
-    // Actualizar enlace del carrito
+    // Actualizar enlace del carrito en todas las páginas
     const carritoLink = document.getElementById('carrito-link');
     if (carritoLink) {
         carritoLink.textContent = `Carrito (${totalItems})`;
@@ -285,7 +282,7 @@ function actualizarContadorCarrito() {
 function cargarProductosRelacionados(productoActual) {
     const relacionados = productos
         .filter(p => p.id !== productoActual.id && p.categoria === productoActual.categoria)
-        .slice(0, 4); // Limitar a 4 productos relacionados
+        .slice(0, 4);
     
     if (relacionados.length === 0) return;
     
@@ -317,5 +314,5 @@ function cargarProductosRelacionados(productoActual) {
 // Cargar detalles del producto cuando la página esté lista
 document.addEventListener('DOMContentLoaded', function() {
     cargarDetallesProducto();
-    actualizarContadorCarrito();
+    actualizarContadorCarrito(); // Actualizar contador al cargar la página
 });
