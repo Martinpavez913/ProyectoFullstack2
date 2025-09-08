@@ -271,7 +271,8 @@ main {
     margin-left: 0.5rem;
 }
 
-.btn-agregar-carrito {
+/* BOTONES - ESTILOS IGUALES */
+.btn-agregar-carrito, .btn-ver-detalles {
     width: 100%;
     padding: 0.7rem;
     background-color: #000;
@@ -281,9 +282,15 @@ main {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
 }
 
-.btn-agregar-carrito:hover {
+.btn-agregar-carrito:hover, .btn-ver-detalle:hover {
     background-color: #333;
 }
 
