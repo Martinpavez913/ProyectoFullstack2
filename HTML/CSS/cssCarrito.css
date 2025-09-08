@@ -1,27 +1,11 @@
+/* CSS/cssCarrito.css */
+
 /* Estilos para el logo */
 .logo {
-    width: 200px; /* Ajusta según el tamaño de tu logo */
-    height: 200px; /* Ajusta según el tamaño de tu logo */
+    width: 200px;
+    height: 200px;
     object-fit: contain;
 }
-
-/* Media query para responsividad - Actualizado */
-@media (max-width: 768px) {
-    .logo-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 5px;
-    }
-    
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
-    
-    /* El resto de tus estilos responsive... */
-}
-
-
 
 /* Reset básico y estilos generales */
 * {
@@ -31,10 +15,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #000;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     padding: 0;
     margin: 0;
 }
@@ -48,17 +32,6 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
-
-header div:first-child h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.2rem;
-}
-
-header div:first-child h2 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    color: #ccc;
 }
 
 /* Navegación */
@@ -90,201 +63,293 @@ nav ul li a.active {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 0.5rem;
 }
 
-.header-right a {
+.cart-link {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border: 1px solid #fff;
     display: inline-block;
+    margin-bottom: 0.5rem;
 }
 
-.header-right a:hover {
+.cart-link:hover {
     background-color: #fff;
     color: #000;
 }
 
 .auth-links {
-    display: flex;
-    gap: 0.5rem;
+    margin-top: 0.5rem;
 }
 
-/* Contenido principal */
-main {
-    max-width: 1200px;
+.auth-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal - Estilo como inicio de sesión */
+.carrito-container {
+    max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* Sección de filtros */
-.filtros {
-    background-color: #fff;
-    padding: 1.5rem;
-    border: 1px solid #ddd;
+.breadcrumb {
+    padding: 15px 0;
     margin-bottom: 2rem;
-    border-radius: 5px;
-}
-
-.filtros h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.filtros-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.filtro-grupo {
-    display: flex;
-    flex-direction: column;
-}
-
-.filtro-grupo label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.filtro-grupo select {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.btn-filtrar, .btn-limpiar {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 1.5rem;
-}
-
-.btn-filtrar {
-    background-color: #000;
-    color: #fff;
-}
-
-.btn-limpiar {
-    background-color: #f0f0f0;
-    color: #333;
-    margin-left: 0.5rem;
-}
-
-.btn-filtrar:hover {
-    background-color: #333;
-}
-
-.btn-limpiar:hover {
-    background-color: #ddd;
-}
-
-/* Catálogo de productos */
-.catalogo {
-    margin-bottom: 3rem;
-}
-
-.catalogo h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-
-.producto {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.producto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.producto-imagen {
-    position: relative;
-    height: 200px;
-    overflow: hidden;
-    background-color: #f0f0f0;
-}
-
-.producto-imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.producto-etiqueta {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #000;
-    color: #fff;
-    padding: 0.3rem 0.6rem;
-    font-size: 0.8rem;
-    border-radius: 3px;
-}
-
-.producto-info {
-    padding: 1rem;
-}
-
-.producto-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-
-.producto-info p {
-    color: #666;
-    margin-bottom: 1rem;
     font-size: 0.9rem;
 }
 
-.producto-precio {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+.breadcrumb a {
+    color: #1e4788;
+    text-decoration: none;
 }
 
-.precio-actual {
-    font-size: 1.2rem;
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.carrito-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+
+/* Estructura del carrito */
+.carrito-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Sección de items del carrito - Estilo como formulario */
+.carrito-items {
+    padding: 1.5rem;
+    border: 1px solid #000;
+}
+
+.carrito-items h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 2rem;
+}
+
+.empty-cart p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.btn-continua-compra {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 1.1rem;
     font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-continua-compra:hover {
+    background-color: #fff;
     color: #000;
 }
 
-.precio-anterior {
-    font-size: 1rem;
-    color: #999;
-    text-decoration: line-through;
-    margin-left: 0.5rem;
+/* Items del carrito */
+.carrito-item {
+    display: grid;
+    grid-template-columns: 100px 1fr auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
 }
 
-.btn-agregar-carrito {
-    width: 100%;
-    padding: 0.7rem;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+.carrito-item:last-child {
+    border-bottom: none;
+}
+
+.item-imagen {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.item-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-info p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.item-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.item-cantidad button {
+    width: 30px;
+    height: 30px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 
-.btn-agregar-carrito:hover {
-    background-color: #333;
+.item-cantidad button:hover {
+    background: #ddd;
+}
+
+.item-total {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.btn-eliminar {
+    background: #ff4444;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.btn-eliminar:hover {
+    background: #cc0000;
+}
+
+/* Resumen del pedido - Estilo como formulario */
+.resumen-pedido {
+    padding: 1.5rem;
+    border: 1px solid #000;
+}
+
+.resumen-pedido h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+
+.resumen-detalles {
+    margin-bottom: 1.5rem;
+}
+
+.resumen-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.resumen-item.total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #000;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Cupón de descuento */
+.cupon-descuento {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cupon-descuento input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #000;
+}
+
+.cupon-descuento button {
+    padding: 0.8rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cupon-descuento button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Botón finalizar compra */
+.btn-finalizar-compra {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.btn-finalizar-compra:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Medios de pago */
+.medios-pago h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.medios-pago-icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Productos recomendados */
+.productos-recomendados {
+    padding: 1.5rem;
+    border: 1px solid #000;
+    margin-bottom: 3rem;
+}
+
+.productos-recomendados h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+
+.recomendados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
 }
 
 /* Footer */
@@ -337,7 +402,6 @@ footer input[type="email"] {
     min-width: 200px;
     padding: 0.5rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
 footer button {
@@ -346,7 +410,6 @@ footer button {
     color: #000;
     border: 1px solid #fff;
     cursor: pointer;
-    border-radius: 4px;
 }
 
 footer button:hover {
@@ -365,13 +428,14 @@ footer > div:last-child {
 
 /* Media queries para responsividad */
 @media (max-width: 768px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
     header {
         flex-direction: column;
         text-align: center;
-    }
-    
-    header div:first-child {
-        margin-bottom: 1rem;
     }
     
     nav ul {
@@ -381,14 +445,25 @@ footer > div:last-child {
     
     .header-right {
         align-items: center;
+        margin-top: 1rem;
     }
     
-    .filtros-container {
+    .carrito-content {
         grid-template-columns: 1fr;
     }
     
-    .productos-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    .carrito-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 0.8rem;
+    }
+    
+    .item-cantidad {
+        justify-content: center;
+    }
+    
+    .recomendados-grid {
+        grid-template-columns: 1fr;
     }
     
     footer {
@@ -396,16 +471,12 @@ footer > div:last-child {
         text-align: center;
     }
     
-    footer form {
-        justify-content: center;
+    .cupon-descuento {
+        flex-direction: column;
     }
 }
 
 @media (max-width: 480px) {
-    .productos-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .auth-links {
         flex-direction: column;
         gap: 0.5rem;
@@ -414,5 +485,15 @@ footer > div:last-child {
     nav ul {
         flex-direction: column;
         gap: 0.5rem;
+    }
+    
+    .carrito-container {
+        padding: 0 0.5rem;
+    }
+    
+    .carrito-items,
+    .resumen-pedido,
+    .productos-recomendados {
+        padding: 1rem;
     }
 }
