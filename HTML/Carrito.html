@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/cssCarrito.css">
+    <title>Carrito de Compras - ColoColeccionables</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/Imagenes/logoconfondo.png" alt="Logo ColoColeccionables" class="logo">  
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="carrito.html" id="carrito-link" class="cart-link">Carrito (0)</a>
+            <div class="auth-links">
+                <a href="InicioSesion.html">Iniciar Sesión</a> | 
+                <a href="Registro.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="carrito-container">
+        <!-- Navegación tipo "migas de pan" -->
+        <div class="breadcrumb">
+            <a href="Home.html">Home</a> > 
+            <a href="Productos.html">Productos</a> > 
+            <span>Carrito de Compras</span>
+        </div>
+
+        <h1>Carrito de Compras</h1>
+
+        <div class="carrito-content">
+            <!-- Lista de productos en el carrito -->
+            <section class="carrito-items">
+                <h2>Tus Productos</h2>
+                <div id="carrito-vacio" class="empty-cart">
+                    <p>Tu carrito está vacío</p>
+                    <a href="Productos.html" class="btn-continua-compra">Continuar Comprando</a>
+                </div>
+                
+                <div id="carrito-items-container">
+                    <!-- Los productos del carrito se cargarán dinámicamente -->
+                </div>
+            </section>
+
+            <!-- Resumen del pedido -->
+            <aside class="resumen-pedido">
+                <h2>Resumen del Pedido</h2>
+                <div class="resumen-detalles">
+                    <div class="resumen-item">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0</span>
+                    </div>
+                    <div class="resumen-item">
+                        <span>Envío:</span>
+                        <span id="envio">$0</span>
+                    </div>
+                    <div class="resumen-item total">
+                        <span>Total:</span>
+                        <span id="total">$0</span>
+                    </div>
+                </div>
+
+                <div class="cupon-descuento">
+                    <input type="text" placeholder="Código de descuento" id="codigo-descuento">
+                    <button onclick="aplicarDescuento()">Aplicar</button>
+                </div>
+
+                <button id="btn-finalizar-compra" class="btn-finalizar-compra" onclick="finalizarCompra()">
+                    Finalizar Compra
+                </button>
+
+                <div class="medios-pago">
+                    <h3>Medios de Pago</h3>
+                    <div class="medios-pago-icons">
+                        <span>💳</span>
+                        <span>📱</span>
+                        <span>🏦</span>
+                        <span>📧</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Productos recomendados -->
+        <section class="productos-recomendados">
+            <h2>Productos que podrían interesarte</h2>
+            <div class="recomendados-grid" id="productos-recomendados">
+                <!-- Los productos recomendados se cargarán dinámicamente -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="/Imagenes/logoconfondo.png" alt="Logo ColoColeccionables" class="logo">
+            <p>La tienda oficial de coleccionables del equipo más popular de Chile</p>
+        </div>
+        <div>
+            <h4>Enlaces rápidos</h4>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Categorías</h4>
+            <ul>
+                <li><a href="#">Vestuario</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Libros</a></li>
+                <li><a href="#">Figuras</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Suscríbete a nuestro boletín</h4>
+            <form>
+                <input type="email" placeholder="Ingresa tu email">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+        <div>
+            <p>&copy; 2025 ColoColeccionables. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Importar scripts -->
+    <script src="js/productos.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
