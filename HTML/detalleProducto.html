@@ -30,14 +30,14 @@
     </header>
 
     <main>
-        <!-- Navegación tipo "migas de pan" -->
+        
         <div class="breadcrumb">
-            <a href="Home.html">Home</a> > 
-            <a href="Productos.html">Productos</a> > 
+            <a href="Home.html">Home</a> >
+            <a href="Productos.html">Productos</a> >
             <span id="breadcrumb-producto">Detalles del Producto</span>
         </div>
 
-        <!-- Selector de producto para pruebas (solo visible localmente) -->
+        <!-- OJO SOLO VISIBILIDAD LOCAL -->
         <div id="selector-producto" style="display: none; background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px;">
             <p><strong>Para pruebas locales:</strong> Selecciona un producto para ver</p>
             <select id="select-producto">
@@ -51,16 +51,16 @@
             <button onclick="cargarProductoSeleccionado()">Ver Producto</button>
         </div>
 
-        <!-- Contenedor para los detalles del producto -->
+        <!-- CONTENDOR DETALLE -->
         <section class="producto-detalle" id="producto-detalle">
-            <!-- Los detalles se cargarán dinámicamente con JavaScript -->
+            <!-- LOS DETALLES SE CARGAN EN EL JS, OJO -->
         </section>
 
-        <!-- Productos relacionados -->
+        
         <section class="producto-relacionados">
             <h2>Productos Relacionados</h2>
             <div class="relacionados-grid" id="productos-relacionados">
-                <!-- Los productos relacionados se cargarán dinámicamente -->
+                <!-- LOS PRODUCTOS SE CARGAN EN EL JS, OJO -->
             </div>
         </section>
     </main>
@@ -101,7 +101,7 @@
         </div>
     </footer>
 
-    <!-- Incluir el archivo JavaScript externo -->
+    
     <script src="js/detalleProducto.js"></script>
 </body>
 </html>

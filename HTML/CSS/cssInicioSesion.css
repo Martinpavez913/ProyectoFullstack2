@@ -1,11 +1,11 @@
-/* Estilos para el logo */
+/* LOGO */
 .logo {
-    width: 200px; /* Ajusta según el tamaño de tu logo */
-    height: 200px; /* Ajusta según el tamaño de tu logo */
+    width: 200px;
+    height: 200px;
     object-fit: contain;
 }
 
-/* Media query para responsividad - Actualizado */
+
 @media (max-width: 768px) {
     .logo-container {
         flex-direction: column;
@@ -18,12 +18,12 @@
         height: 50px;
     }
     
-    /* El resto de tus estilos responsive... */
+    
 }
 
 
 
-/* Reset básico y estilos generales */
+/* RESET Y ESTILOS GENERALES */
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ body {
     margin: 0;
 }
 
-/* Estructura principal */
+/* ESTRUCTURA PRINCIPAL */
 header {
     background-color: #000;
     color: #fff;
@@ -61,7 +61,7 @@ header div:first-child h2 {
     color: #ccc;
 }
 
-/* Navegación */
+/* NAVEGACION */
 nav ul {
     display: flex;
     list-style: none;
@@ -84,7 +84,7 @@ nav ul li a:hover {
     border: 1px solid #fff;
 }
 
-/* Carrito */
+/* CARRO */
 header div:last-child a {
     color: #fff;
     text-decoration: none;
@@ -97,14 +97,14 @@ header div:last-child a:hover {
     color: #000;
 }
 
-/* Contenido principal */
+/* CONTENIDO PRINCIPAL */
 main {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* Sección de inicio de sesión */
+/* SECCION INICIO */
 section {
     margin-bottom: 3rem;
     padding: 1.5rem;
@@ -123,7 +123,7 @@ section > p {
     font-size: 1.1rem;
 }
 
-/* Formulario de inicio de sesión */
+/* FORMULARIO INICIO */
 #loginForm {
     display: grid;
     gap: 1.2rem;
@@ -169,7 +169,7 @@ button[type="submit"]:hover {
     color: #000;
 }
 
-/* Enlaces adicionales */
+/* ENLACES */
 section > p:last-of-type {
     margin-top: 1.5rem;
     text-align: center;
@@ -184,7 +184,7 @@ section > p:last-of-type a:hover {
     color: #666;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     background-color: #000;
     color: #fff;
@@ -221,7 +221,7 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-/* Formulario de suscripción */
+/* FORMULARIO SUSCRIPCION */
 footer form {
     display: flex;
     flex-wrap: wrap;
@@ -249,7 +249,7 @@ footer button:hover {
     color: #fff;
 }
 
-/* Derechos de autor */
+/* DERECHOS DE AUTOR */
 footer > div:last-child {
     grid-column: 1 / -1;
     text-align: center;
@@ -258,7 +258,7 @@ footer > div:last-child {
     border-top: 1px solid #333;
 }
 
-/* Media queries para responsividad */
+/* MEDIA QUERYS DE RESPONSIVIDAD */
 @media (max-width: 768px) {
     header {
         flex-direction: column;

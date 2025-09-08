@@ -1,4 +1,4 @@
-/* Reset completo para eliminar espacios no deseados */
+/* RESET ESPACIOS NO DESEADOS */
 html, body {
     margin: 0;
     padding: 0;
@@ -6,14 +6,14 @@ html, body {
     overflow-x: hidden;
 }
 
-/* Estilos para el logo */
+/* LOGO */
 .logo {
     width: 200px;
     height: 200px;
     object-fit: contain;
 }
 
-/* Reset básico y estilos generales */
+/* RESET Y GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ body {
     background-color: #ffffff;
 }
 
-/* Estructura principal - Corregido para eliminar espacio superior */
+/* ESTRUCUTRA PRINCIPAL */
 header {
     background-color: #000;
     color: #fff;
@@ -49,7 +49,7 @@ header div:first-child h2 {
     color: #ccc;
 }
 
-/* Navegación */
+/* NAVEGADOR */
 nav ul {
     display: flex;
     list-style: none;
@@ -72,7 +72,7 @@ nav ul li a:hover {
     border: 1px solid #fff;
 }
 
-/* Carrito */
+/* CARRO */
 header div:last-child a {
     color: #fff;
     text-decoration: none;
@@ -85,7 +85,7 @@ header div:last-child a:hover {
     color: #000;
 }
 
-/* Enlaces de autenticación */
+/* EENLACES AUTENTICACION */
 .header-right {
     display: flex;
     flex-direction: column;
@@ -106,14 +106,14 @@ header div:last-child a:hover {
     text-decoration: underline;
 }
 
-/* Contenido principal */
+/* CONTENIDO PRINCIPAL */
 main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* Breadcrumb (migas de pan) */
+/* BREAD */
 .breadcrumb {
     padding: 15px 0;
     background-color: #f9f9f9;
@@ -131,7 +131,7 @@ main {
     text-decoration: underline;
 }
 
-/* Detalles del producto */
+/* DETALLES DE PRODUCTO */
 .producto-detalle {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -304,7 +304,7 @@ main {
     min-width: 120px;
 }
 
-/* Productos relacionados */
+/* PRODUCTOS RELACIONES */
 .producto-relacionados {
     margin-bottom: 3rem;
 }
@@ -322,7 +322,7 @@ main {
     gap: 1.5rem;
 }
 
-/* Botón Ver Detalles */
+/* VER DETALLES */
 .btn-ver-detalles {
     background: #000;
     color: white;
@@ -338,7 +338,7 @@ main {
     background: #333;
 }
 
-/* Selector de producto para pruebas locales */
+/* SELECTOR DE PRODUCTOS */
 #selector-producto {
     background: #f0f0f0;
     padding: 10px;
@@ -353,7 +353,7 @@ main {
     padding: 5px 10px;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     background-color: #000;
     color: #fff;
@@ -390,7 +390,7 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-/* Formulario */
+/* FORMULARIO */
 form {
     display: flex;
     flex-wrap: wrap;
@@ -418,7 +418,7 @@ button[type="submit"]:hover {
     color: #fff;
 }
 
-/* Derechos de autor */
+/* DERECHOS DE AUTOR */
 footer > div:last-child {
     grid-column: 1 / -1;
     text-align: center;
@@ -427,7 +427,7 @@ footer > div:last-child {
     border-top: 1px solid #333;
 }
 
-/* Media queries para responsividad */
+/* MMEDIA QUERYS DE RESPONSIVIDAD */
 @media (max-width: 768px) {
     .logo {
         width: 50px;

@@ -1,4 +1,4 @@
-/* Reset básico y estilos generales */
+/* RESET Y GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     margin: 0;
 }
 
-/* Estructura principal */
+/* ESTRUCTURA PRINCIPAL */
 header {
     background-color: #000;
     color: #fff;
@@ -25,14 +25,14 @@ header {
     flex-wrap: wrap;
 }
 
-/* Estilos para el logo */
+/* LOGO */
 .logo {
     width: 80px;
     height: 80px;
     object-fit: contain;
 }
 
-/* Navegación */
+/* NAVEGACION */
 nav ul {
     display: flex;
     list-style: none;
@@ -55,7 +55,7 @@ nav ul li a:hover {
     border: 1px solid #fff;
 }
 
-/* Carrito */
+/* CARRO*/
 header div:last-child a {
     color: #fff;
     text-decoration: none;
@@ -68,14 +68,14 @@ header div:last-child a:hover {
     color: #000;
 }
 
-/* Contenido principal */
+/* CONTENIDO PRINCIPAL */
 main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* Banner principal */
+/* BANNER */
 .banner {
     text-align: center;
     padding: 3rem 1.5rem;
@@ -112,7 +112,7 @@ main {
     color: #000;
 }
 
-/* Secciones de productos */
+/* SECCION PRODUCTOS */
 .featured-products,
 .special-offers {
     margin-bottom: 3rem;
@@ -129,7 +129,7 @@ main {
     text-align: center;
 }
 
-/* Grid de productos */
+/* GRID PRODUCTOS */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -137,7 +137,7 @@ main {
     margin-top: 1.5rem;
 }
 
-/* Tarjetas de producto */
+/* TARJETAS PRODUCTO */
 .product-card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -217,7 +217,7 @@ main {
     background-color: #333;
 }
 
-/* Footer */
+/* FOOTER*/
 footer {
     background-color: #000;
     color: #fff;
@@ -254,7 +254,7 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-/* Formulario */
+/* FORMULARIO */
 form {
     display: flex;
     flex-wrap: wrap;
@@ -282,7 +282,7 @@ button:hover {
     color: #fff;
 }
 
-/* Derechos de autor */
+/* DERECHOS DE AUTOR */
 footer > div:last-child {
     grid-column: 1 / -1;
     text-align: center;
@@ -291,7 +291,7 @@ footer > div:last-child {
     border-top: 1px solid #333;
 }
 
-/* Enlaces de autenticación */
+/* ENLACES DE AUTENTICACION */
 .header-right {
     display: flex;
     flex-direction: column;
@@ -312,7 +312,7 @@ footer > div:last-child {
     text-decoration: underline;
 }
 
-/* Media queries para responsividad */
+/* MEDIA QUERYS DE RESPONSIVIDAD */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
