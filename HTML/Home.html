@@ -21,7 +21,7 @@
             </ul>
         </nav>
         <div class="header-right">
-            <a href="carrito.html">Carrito (0)</a>
+            <a href="carrito.html" id="carrito-link">Carrito (0)</a>
             <div class="auth-links">
                 <a href="InicioSesion.html">Iniciar Sesión</a> | 
                 <a href="Registro.html">Registrarse</a>
@@ -149,5 +149,18 @@
             <p>&copy; 2025 ColoColeccionables. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script>
+        // Actualizar contador del carrito al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            const totalItems = carrito.reduce((total, item) => total + item.cantidad, 0);
+            
+            // Actualizar enlace del carrito
+            const carritoLink = document.getElementById('carrito-link');
+            if (carritoLink && totalItems > 0) {
+                carritoLink.textContent = `Carrito (${totalItems})`;
+            }
+        });
+    </script>
 </body>
 </html>
